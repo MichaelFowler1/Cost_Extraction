@@ -9,9 +9,9 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Paths
-PDF_PATH = r"C:\AI\data\raw\gao_report.pdf"
-IMAGE_DIR = r"C:\AI\data\processed\images"
-OUTPUT_DIR = r"C:\AI\outputs"
+PDF_PATH = "data/raw/gao_report.pdf"
+IMAGE_DIR = "data/processed/images"
+OUTPUT_DIR = "outputs"
 
 os.makedirs(IMAGE_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
