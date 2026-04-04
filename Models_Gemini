@@ -1,0 +1,15 @@
+from google import genai
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+print("--- Checking your available Gemini Models ---")
+try:
+    # In the new library, we just iterate through the models
+    for model in client.models.list():
+        # We just want the 'name' attribute
+        print(f"Model Name: {model.name}")
+except Exception as e:
+    print(f"Could not list models: {e}")
