@@ -1,3 +1,4 @@
+<img width="2111" height="833" alt="3ad56385-567f-4743-8c9f-023937b83fc1" src="https://github.com/user-attachments/assets/1f9c39ee-752c-4a0b-9b3c-6835d19457fb" />
 Automated AI Cost Extraction Pipeline
 Executive Summary
 I developed this system to handle the tedious task of digging through complex, unstructured PDF documents to find specific cost data. Instead of wasting hours on manual data entry, this pipeline uses Python and Google's Gemini AI to automatically find, clean, and store financial information. It captures both text and visual data (like tables and charts), analyzes the context, and saves the final results into a structured database. This project effectively turns a manual bottleneck into an automated, scalable workflow.
