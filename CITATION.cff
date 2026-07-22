@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Cost_Extraction"
+abstract: "AI Defense Pipeline: Automates extraction and analysis of GAO reports. It uses GenAI and data engineering to turn unstructured PDFs into a structured, searchable, and actionable knowledge base."
+authors:
+  - family-names: "Fowler"
+    given-names: "Michael"
+    alias: "MichaelFowler1"
+repository-code: "https://github.com/MichaelFowler1/Cost_Extraction"
+url: "https://github.com/MichaelFowler1/Cost_Extraction"
+license: "Apache-2.0"
+date-released: "2026-04-04"
