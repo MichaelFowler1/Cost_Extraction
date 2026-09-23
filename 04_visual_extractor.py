@@ -1,6 +1,6 @@
 import os
 import time
-import fitz  # PyMuPDF
+import pypdfium2 as pdfium
 from google import genai
 from dotenv import load_dotenv
 from PIL import Image
@@ -23,11 +23,11 @@ def extract_page_vision(page_num):
 
     # Capture at a "Quota-Friendly" resolution (1.5x instead of 2.0x)
     img_path = os.path.join(IMAGE_DIR, f"page_{page_num}_snap.png")
-    doc = fitz.open(PDF_PATH)
-    page = doc.load_page(page_num - 1)
-    pix = page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5)) 
-    pix.save(img_path)
-    doc.close()
+    pdf = pdfium.PdfDocument(PDF_PATH)
+    page = pdf[page_num - 1]
+    page.render(scale=1.5).to_pil().save(img_path)
+    page.close()
+    pdf.close()
 
     success = False
     # We will try the most stable model first
