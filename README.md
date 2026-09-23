@@ -30,3 +30,15 @@ GEMINI_API_KEY=your_actual_key_here
 
 Security and Project Hygiene
 I built this repository with security in mind. I implemented a strict .gitignore file to ensure that sensitive files like API keys, large virtual environments, and local data exports are never uploaded to the public history. This keeps the repository clean, professional, and secure for deployment.
+
+## License
+
+Everything in this repository from this change on is under the
+[PolyForm Noncommercial License 1.0.0](LICENSE). Earlier commits were released
+under the Apache License 2.0 and stay under it. In plain terms: it is free for
+any noncommercial purpose, and for schools and universities, public research
+organizations, government institutions and charities, whatever their funding.
+Commercial use needs a license from the author: ask through
+[the issue tracker](https://github.com/MichaelFowler1/Cost_Extraction/issues). Anyone who
+passes on a copy has to pass on the license and the `Required Notice:` line in
+[NOTICE](NOTICE). This is a plain summary; the LICENSE file is what governs.
